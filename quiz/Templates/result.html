@@ -8,13 +8,25 @@
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
 
 
 
-	<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
+<!-- 	<h1>Du är klar och fick {{ correct }} av {{ total }}</h1> -->
+
+
+		{% if correct > 8 %}
+		<h1>Du är klar och är grym!</h1>
+		{% elif correct > 5 %}
+		<h1>Du är klar och detta gick ju ganska bra!</h1>
+		{% else %}
+		<h1>Ut och res! Du fick mindre än 5 rätt</h1>
+		{% endif %}
+
+
 
 
 	<p><a href="{% url 'start_page' %}">

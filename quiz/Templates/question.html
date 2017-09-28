@@ -8,22 +8,23 @@
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
 
-
+<img src="/static/image-ramensoppa.jpeg" alt="Mjau" style="width:300px;height:300px;">
 
 
 
 <p>
-	<h1>{{ question_number }}. {{ question }}</h1><br>
+	<h1>{{ question_number }}. {{ question }}</h1>
 	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 		{% csrf_token %}
 
-		<label><input type="radio" name="answer" value="1" checked> {{ answer1 }}</label><br>
-		<label><input type="radio" name="answer" value="2"> {{ answer2 }}</label><br>
-		<label><input type="radio" name="answer" value="3"> {{ answer3 }}</label>
+		<label><h5><input type="radio" name="answer" class="option-input radio" value="1" checked> {{ answer1 }}</h5></label>
+		<label><h5><input type="radio" name="answer" class="option-input radio" value="2"> {{ answer2 }}</h5></label>
+		<label><h5><input type="radio" name="answer" class="option-input radio" value="3"> {{ answer3 }}</h5></label>
 
 <!-- 		<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked=""> {{ answer1 }}</label><br -->
 

@@ -2,14 +2,16 @@ body {
 background: rgb(250, 250, 250);
 font-size: 12pt;
 font-family: Open sans;
-margin-top: 10%;
+margin-top: 5%;
 text-align: center;
 background-image: url('image-marble-background.jpg');
+/*line-height: 5px;*/
 }
 
 h1 {
 color: rgb(0, 0, 0);
-font-size: 36pt;
+/*font-size: 36pt;*/
+font-size: 5vw;
 font-family: 'Abril Fatface';
 padding-top: 0px;
 
@@ -31,8 +33,16 @@ font-family: Open sans;
 h4{
 color: rgb(0, 0, 0);
 font-size: 36pt;
-font-family: Didot;
+font-family: Open sans;
 padding-top: 100px;
+}
+
+/*Text på svarsalternativ:*/
+h5{
+color: rgb(0, 0, 0);
+font-size: 16pt;
+font-family: Open sans;
+padding-top: 0px;
 }
 
 p {
@@ -50,7 +60,7 @@ width: 50px;
 }
 
 .columnstart {
-	background: lightsalmon;
+	background: white;
 }
 
 /*.margin-top {
@@ -59,6 +69,7 @@ margin-top: 20%
 
 label {
 font-family: Open sans;
+display: block;
 }
 
 input[type=radio]{
@@ -73,13 +84,19 @@ button{
 background-color: #d31145 ;
 color: white;
 text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-/*background-image: linear-gradient(to bottom,#f13064,#b90d3b);*/
-/*border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);*/
+background-image: linear-gradient(to bottom,#f13064,#b90d3b);
+border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
 padding: 5px 15px;
 border-radius: 3px;
 margin-bottom: 20px;
 margin-top: 20px;
 }
+
+
+
+
+
+
 /*button{
 background-color: #d31145 ;
 color: white;
@@ -91,3 +108,92 @@ border-radius: 4px;
 margin-bottom: 20px;
 margin-top: 20px;
 }*/
+
+
+
+
+
+
+
+
+
+*{font-family: 'Open sans', sans-serif;}
+
+@keyframes click-wave {
+  0% {
+    height: 30px;
+    width: 30px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+/*Min egen kod:*/
+.option-input:focus {
+outline: none !important;
+}
+/*Slut på egen kod*/
+
+.option-input:checked {
+  background: #d31145;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
