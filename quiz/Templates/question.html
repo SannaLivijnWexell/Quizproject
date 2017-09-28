@@ -16,27 +16,26 @@
 
 
 
-
+<p>
 	<h1>{{ question_number }}. {{ question }}</h1><br>
-	<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked="">{{ answer1 }}</label><br>
-	<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked="">{{ answer2 }}</label><br>
-	<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked="">{{ answer3 }}</label>
+	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+		{% csrf_token %}
+
+		<label><input type="radio" name="answer" value="1" checked> {{ answer1 }}</label><br>
+		<label><input type="radio" name="answer" value="2"> {{ answer2 }}</label><br>
+		<label><input type="radio" name="answer" value="3"> {{ answer3 }}</label>
+
+<!-- 		<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked=""> {{ answer1 }}</label><br -->
+
+		<br>
+		<button type="submit">Nästa</button>
+</p>
+
+
+	</form>
 
 
 
-<br>
-
-
-
-
-
-
-
-
-
-<p><a href="{% url 'completed_page' quiz_number %}">
-    <button type="button">Nästa</button>
-</a></p>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
