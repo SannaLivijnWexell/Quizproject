@@ -8,8 +8,8 @@ from django.shortcuts import render
 quizzes = [
 	{
 		"quiz_number": 1,
-		"name": "Klassiska böcker",
-		"description": "Hur bra kan du dina klassiker?"
+		"name": "Jorden runt på 15 rätter",
+		"description": "Ramen, shakshuka och haggis – har du kolla?"
 	},
 	{
 		"quiz_number": 2,

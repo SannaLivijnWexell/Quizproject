@@ -7,6 +7,7 @@
 	<title>Question</title>
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 </head>
 <body>
 
@@ -15,15 +16,15 @@
 
 
 
-	<h1>{{ question_number }}. {{ question }}</h1>
-	<p>{{ answer1 }}</p>
-	<p>{{ answer2 }}</p>
-	<p>{{ answer3 }}</p>
+
+	<h1>{{ question_number }}. {{ question }}</h1><br>
+	<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked="">{{ answer1 }}</label><br>
+	<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked="">{{ answer2 }}</label><br>
+	<label><input type="radio" name="answer" value="1" id="optionsRadios1" checked="">{{ answer3 }}</label>
 
 
 
-
-
+<br>
 
 
 

@@ -7,17 +7,20 @@
 	<title>Quiz</title>
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 </head>
 <body>
 
 <div class="center">
 
 
+
 	<h1>{{ quiz.name }}</h1>
 	<p>{{ quiz.description }}</p>
 
 
-<br>
+
+
 
 
 <a href="{% url 'question_page' quiz_number 1 %}">

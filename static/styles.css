@@ -2,36 +2,47 @@ body {
 background: rgb(250, 250, 250);
 font-size: 12pt;
 font-family: Open sans;
-margin: 40px;
+margin-top: 10%;
 text-align: center;
 background-image: url('image-marble-background.jpg');
 }
+
 h1 {
 color: rgb(0, 0, 0);
 font-size: 36pt;
-font-family: Didot;
+font-family: 'Abril Fatface';
+padding-top: 0px;
 
 }
 h2 {
-color: #d31145;
+color: #555555;
+/*color: #d31145;*/
 font-size: 14pt;
 font-family: Open sans;
 font-weight: bold;
 }
+
 h3 {
 color: rgb(0, 0, 0);
 font-size: 10pt;
 font-family: Open sans;
 }
+
 h4{
 color: rgb(0, 0, 0);
 font-size: 36pt;
 font-family: Didot;
 padding-top: 100px;
 }
+
+p {
+color: #373535;
+}
+
 a {
 color: rgb(256,99,33);
 }
+
 ul {
 color: pink;
 width: 50px;
@@ -42,11 +53,34 @@ width: 50px;
 	background: lightsalmon;
 }
 
+/*.margin-top {
+margin-top: 20%
+}*/
+
+label {
+font-family: Open sans;
+}
+
+input[type=radio]{
+	margin-right: 10px;
+}
 
 footer {
-	align-content: bottom;
+
 }
+
 button{
+background-color: #d31145 ;
+color: white;
+text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+/*background-image: linear-gradient(to bottom,#f13064,#b90d3b);*/
+/*border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);*/
+padding: 5px 15px;
+border-radius: 3px;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+/*button{
 background-color: #d31145 ;
 color: white;
 text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -54,4 +88,6 @@ background-image: linear-gradient(to bottom,#f13064,#b90d3b);
 border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
 padding: 4px 14px;
 border-radius: 4px;
-}
+margin-bottom: 20px;
+margin-top: 20px;
+}*/
