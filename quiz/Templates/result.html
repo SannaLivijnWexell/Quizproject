@@ -12,18 +12,24 @@
 </head>
 <body>
 
-
+<!-- https://developers.facebook.com/docs/plugins/share-button/ -->
 
 
 <!-- 	<h1>Du är klar och fick {{ correct }} av {{ total }}</h1> -->
 
 
 		{% if correct > 8 %}
-		<h1>Du är klar och är grym!</h1>
+		<h6>{{ correct }} av {{ total }}</h6>
+		<h1>Hurra! <br>Du måste verkligen vara berest</h1>
+		<img src="/static/image-ramensoppa.jpeg" alt="Mjau" style="width:500px;height:300px;">
 		{% elif correct > 5 %}
-		<h1>Du är klar och detta gick ju ganska bra!</h1>
+		<h6>{{ correct }} av {{ total }}</h6>
+		<h1>Bra jobbat! Du verkar ha koll på världen!</h1>
+		<img src="/static/image-ramensoppa.jpeg" alt="Mjau" style="width:500px;height:300px;">
 		{% else %}
-		<h1>Ut och res! Du fick mindre än 5 rätt</h1>
+		<h6>{{ correct }} av {{ total }}</h6>
+		<h1>Du fick mindre än 5 rätt. <br> Ut och res!</h1>
+		<img src="/static/image-ramensoppa.jpeg" alt="Mjau" style="width:500px;height:300px;">
 		{% endif %}
 
 

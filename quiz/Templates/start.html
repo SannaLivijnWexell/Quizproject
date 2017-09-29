@@ -14,17 +14,16 @@
 
 
 
+
 	<div class="container">
 		<div class="row">
 			<h1>Hur vass är du i köket?</h1></div>
 			<br>
 			<br>
-			<br>
-
 			<div class="row">
 				{% for quiz in quizzes %}
 				<div class="col-sm-4 column1">
-					<img src="/static/image-ramensoppa.jpeg" alt="Matquiz" style="width:300px;height:300px;">
+					<img class="img-circle" src="/static/image-ramensoppa.jpeg" alt="Matquiz" style="width:300px;height:300px;">
 					<br>
 					<h2> {{ quiz.name }} </h2>
 					<h3> {{ quiz.description }} </h3>

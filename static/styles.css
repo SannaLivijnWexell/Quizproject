@@ -2,7 +2,7 @@ body {
 background: rgb(250, 250, 250);
 font-size: 12pt;
 font-family: Open sans;
-margin-top: 5%;
+margin-top: 4%;
 text-align: center;
 background-image: url('image-marble-background.jpg');
 /*line-height: 5px;*/
@@ -10,12 +10,20 @@ background-image: url('image-marble-background.jpg');
 
 h1 {
 color: rgb(0, 0, 0);
-/*font-size: 36pt;*/
-font-size: 5vw;
+font-size: 42pt;
+/*font-size: 5vw;*/
 font-family: 'Abril Fatface';
 padding-top: 0px;
-
 }
+
+h6 {
+color: #d31145;
+font-size: 30pt;
+/*font-size: 5vw;*/
+font-family: 'Abril Fatface';
+padding-top: 0px;
+}
+
 h2 {
 color: #555555;
 /*color: #d31145;*/
@@ -42,7 +50,8 @@ h5{
 color: rgb(0, 0, 0);
 font-size: 16pt;
 font-family: Open sans;
-padding-top: 0px;
+margin-top: 0px;
+margin-bottom: 0px
 }
 
 p {
@@ -61,6 +70,10 @@ width: 50px;
 
 .columnstart {
 	background: white;
+}
+
+.img-circle {
+    border-radius: 50%;
 }
 
 /*.margin-top {
