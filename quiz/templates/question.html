@@ -13,12 +13,10 @@
 <body>
 
 
-<img src="/static/image-ramensoppa.jpeg" alt="Mjau" style="width:500px;height:300px;">
-
-
 
 <p>
-	<h1>{{ question_number }}. {{ question }}</h1>
+	<img src="/static/images/question/image{{ question_number }}.jpeg" alt="Quizbild" style="width:500px;height:300px;">
+	<h6>{{ question_number }}. {{ question }}</h6>
 	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 		{% csrf_token %}
 

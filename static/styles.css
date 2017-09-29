@@ -44,6 +44,14 @@ font-size: 36pt;
 font-family: Open sans;
 padding-top: 100px;
 }
+/*Frågorna:*/
+h6 {
+color: rgb(0, 0, 0);
+font-size: 30pt;
+/*font-size: 5vw;*/
+font-family: 'Abril Fatface';
+padding-top: 0px;
+}
 
 /*Text på svarsalternativ:*/
 h5{
