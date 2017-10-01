@@ -16,14 +16,6 @@ font-family: 'Abril Fatface';
 padding-top: 0px;
 }
 
-h6 {
-color: #d31145;
-font-size: 30pt;
-/*font-size: 5vw;*/
-font-family: 'Abril Fatface';
-padding-top: 0px;
-}
-
 h2 {
 color: #555555;
 /*color: #d31145;*/
@@ -44,14 +36,6 @@ font-size: 36pt;
 font-family: Open sans;
 padding-top: 100px;
 }
-/*Frågorna:*/
-h6 {
-color: rgb(0, 0, 0);
-font-size: 30pt;
-/*font-size: 5vw;*/
-font-family: 'Abril Fatface';
-padding-top: 0px;
-}
 
 /*Text på svarsalternativ:*/
 h5{
@@ -61,6 +45,16 @@ font-family: Open sans;
 margin-top: 0px;
 margin-bottom: 0px
 }
+
+/*Text på frågor*/
+h6 {
+color: #d31145;
+font-size: 20pt;
+font-family: 'Abril Fatface';
+padding-top: 0px;
+}
+
+
 
 p {
 color: #373535;
@@ -75,6 +69,7 @@ color: pink;
 width: 50px;
     margin: 0 auto;
 }
+
 
 .columnstart {
 	background: white;
