@@ -17,11 +17,10 @@ padding-top: 0px;
 }
 
 h2 {
-color: #555555;
-/*color: #d31145;*/
-font-size: 14pt;
-font-family: Open sans;
-font-weight: bold;
+color: rgb(0, 0, 0);
+font-size: 18pt;
+font-family: 'Abril Fatface';
+padding-top: 0px;
 }
 
 h3 {
