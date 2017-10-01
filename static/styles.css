@@ -48,7 +48,7 @@ margin-bottom: 0px
 
 /*Text på frågor*/
 h6 {
-color: #d31145;
+color: rgb(0, 0, 0);
 font-size: 20pt;
 font-family: 'Abril Fatface';
 padding-top: 0px;
@@ -67,16 +67,23 @@ color: rgb(256,99,33);
 ul {
 color: pink;
 width: 50px;
-    margin: 0 auto;
+margin: 0 auto;
 }
 
 
 .columnstart {
-	background: white;
+background: white;
 }
 
 .img-circle {
-    border-radius: 50%;
+border-radius: 50%;
+}
+
+.questiontext {
+color: #d31145;
+font-size: 20pt;
+font-family: 'Abril Fatface';
+padding-top: 0px;
 }
 
 /*.margin-top {
