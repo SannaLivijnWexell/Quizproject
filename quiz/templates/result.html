@@ -18,11 +18,11 @@
 <!-- 	<h1>Du är klar och fick {{ correct }} av {{ total }}</h1> -->
 
 
-		{% if correct > 8 %}
+		{% if correct > 7 %}
 		<h6>{{ correct }} av {{ total }}</h6>
 		<h1>Hurra! <br>Du måste verkligen vara berest</h1>
 		<img src="/static/kbs.gif" alt="Mjau" style="width:500px;height:300px;">
-		{% elif correct > 5 %}
+		{% elif correct >= 3 %}
 		<h6>{{ correct }} av {{ total }}</h6>
 		<h1>Bra jobbat! Du verkar ha koll på världen!</h1>
 		<img src="/static/kbs.gif" alt="Mjau" style="width:500px;height:300px;">
