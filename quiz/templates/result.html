@@ -21,19 +21,52 @@
 		{% if correct > 7 %}
 		<h6>{{ correct }} av {{ total }}</h6>
 		<h1>Hurra! <br>Du måste verkligen vara berest</h1>
-		<img src="/static/kbs.gif" alt="Mjau" style="width:500px;height:300px;">
+		<br>
+		<img src="/static/kbs.gif" alt="Bra!" style="width:500px;height:300px;">
 		{% elif correct >= 3 %}
 		<h6>{{ correct }} av {{ total }}</h6>
-		<h1>Bra jobbat! Du verkar ha koll på världen!</h1>
-		<img src="/static/kbs.gif" alt="Mjau" style="width:500px;height:300px;">
+		<h1>Bra jobbat! <br> Du verkar ha koll på världen!</h1>
+		<br>
+		<img src="/static/kbs.gif" alt="Yeay!" style="width:500px;height:300px;">
 		{% else %}
 		<h6>{{ correct }} av {{ total }}</h6>
 		<h1>Du fick mindre än 5 rätt. <br> Ut och res!</h1>
-		<img src="/static/kbs.gif" alt="Mjau" style="width:500px;height:300px;">
+		<br>
+		<img src="/static/kbs.gif" alt="Ok!" style="width:500px;height:300px;">
+		{% endif %}
+<br>
+<br>
+
+
+	{% for question in questions %}
+		<p>Frågan var: {{ question.question }}</p>
+		<p> Rätt svar:
+		{% if question.correct == 1 %}
+			<span> {{ question.answer1 }} </span>
+		{% elif question.correct == 2 %}
+			<span> {{ question.answer2 }} </span>
+		{% elif question.correct == 3 %}
+			<span> {{ question.answer3 }} </span>
+		{% endif %}
+		</p>
+		<p>Ditt svar: 
+		{% if question.user_answer == 1 %}
+			<span> {{ question.answer1 }} </span>
+		{% elif question.user_answer == 2 %}
+			<span> {{ question.answer2 }} </span>
+		{% elif question.user_answer == 3 %}
+			<span> {{ question.answer3 }} </span>
 		{% endif %}
 
+		</p>
+		{% if question.correct == question.user_answer %}
+			<div class="rightanswer">Du hade RÄTT</div>
+		{% else %}
+			<div class="wronganswer">Du hade FEL</div>
+		{% endif %}
+	{% endfor %}
 
-
+<!-- 	<pre> {{question}} </pre> -->
 
 	<p><a href="{% url 'start_page' %}">
      <button type="button">Till alla matquiz</button>

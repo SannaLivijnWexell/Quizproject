@@ -69,6 +69,27 @@ width: 50px;
 margin: 0 auto;
 }
 
+/*<div class="wronganswer">*/
+.wronganswer {
+font-family: Open sans;
+font-weight: bold;
+color: #d31145;
+/*border-bottom: #d31145;*/
+
+/*border: 2px solid #d31145;*/
+
+/*border-style: dotted;
+border-radius: 5px;
+border: center;
+width: 100px;*/
+}
+
+/*<div class="rightanswer">*/
+.rightanswer {
+font-family: Open sans;
+font-weight: bold;
+color: #23a323;
+}
 
 .columnstart {
 background: white;
